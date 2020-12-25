@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "fs": "0.0.1-security",
-    "nodejs-lockfile-parser": "git@github.com:snyk/nodejs-lockfile-parser.git"
+    "nodejs-lockfile-parser": "https://github.com/snyk/nodejs-lockfile-parser.git"
   },
   "devDependencies": {
     "@types/node": "^14.0.27",
