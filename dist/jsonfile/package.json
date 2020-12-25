@@ -1,0 +1,98 @@
+{
+  "name": "RnBousaiApp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "tsc-init": "tsc --init --pretty --jsx react",
+    "clean": "react-native-clean-project",
+    "lint": "tslint --format stylish 'src/**/*.ts{,x}'",
+    "format": "prettier --write src/**/*.ts src/**/*.tsx",
+    "jetifier": "npx jetify"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.8.1",
+    "@react-native-community/masked-view": "^0.1.7",
+    "@react-navigation/drawer": "^5.1.1",
+    "@react-navigation/native": "^5.0.9",
+    "@react-navigation/stack": "^5.1.1",
+    "i18n-js": "^3.5.1",
+    "moment": "^2.24.0",
+    "native-base": "^2.13.13",
+    "react": "^16.13.1",
+    "react-native": "^0.63.2",
+    "react-native-bundle-splitter": "^1.0.7",
+    "react-native-device-info": "^5.5.3",
+    "react-native-exit-app": "^1.1.0",
+    "react-native-firebase": "^5.6.0",
+    "react-native-geocoding": "^0.4.0",
+    "react-native-geolocation-service": "^3.1.0",
+    "react-native-gesture-handler": "^1.6.0",
+    "react-native-google-maps-directions": "^2.1.1",
+    "react-native-image-picker": "^2.3.1",
+    "react-native-localize": "^1.3.2",
+    "react-native-maps": "^0.27.1",
+    "react-native-modal": "^11.5.4",
+    "react-native-permissions": "^2.1.4",
+    "react-native-reanimated": "^1.7.0",
+    "react-native-safe-area-context": "^0.7.3",
+    "react-native-screens": "^2.2.0",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-webview": "^8.1.2",
+    "react-native-xml2js": "^1.0.3",
+    "rn-progress-loader": "^1.0.8",
+    "unstated": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/runtime": "^7.8.7",
+    "@types/jest": "^24.0.11",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/react": "^16.9.23",
+    "@types/react-native": "^0.57.65",
+    "@types/react-native-vector-icons": "^6.4.5",
+    "@types/react-test-renderer": "^16.9.2",
+    "babel-jest": "^25.1.0",
+    "compare-versions": "^3.6.0",
+    "jest": "^25.1.0",
+    "jetifier": "^1.6.5",
+    "license-checker": "^25.0.1",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "prettier": "^1.19.1",
+    "react-native-clean-project": "^3.3.0",
+    "react-native-fs": "^2.16.6",
+    "react-native-typescript-transformer": "^1.2.13",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^24.3.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.1.0",
+    "tslint-react": "^4.2.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.(js|ts|tsx)",
+      "**/?(*.)+(spec|test).(js|ts|tsx)"
+    ],
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
+}
