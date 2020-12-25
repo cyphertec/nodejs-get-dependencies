@@ -1,9 +1,15 @@
+const isDebug = false
+
 export const log = (item: string) => {
-  console.log(item)
+  if (isDebug) {
+    console.log(item)
+  }
 }
 
 export const logArray = (array: any[]) => {
-  array.forEach((item) => {
-    console.log(item)
-  })
+  if (isDebug) {
+    array.forEach((item) => {
+      console.log(item)
+    })
+  }
 }

@@ -1,12 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.logArray = exports.log = void 0;
+const isDebug = false;
 exports.log = (item) => {
-    console.log(item);
+    if (isDebug) {
+        console.log(item);
+    }
 };
 exports.logArray = (array) => {
-    array.forEach((item) => {
-        console.log(item);
-    });
+    if (isDebug) {
+        array.forEach((item) => {
+            console.log(item);
+        });
+    }
 };
 //# sourceMappingURL=Log.js.map
